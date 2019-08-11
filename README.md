@@ -32,4 +32,4 @@ And point your browser to `http://localhost:3000`.
 ![](images/expense.png)
 
 ### settle Up
-![](images/settleup)
+![](images/settleup.png)
