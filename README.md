@@ -15,7 +15,7 @@ Use node command to start server side server
 3. cd/server
    node app.js
    
-Use npm start to start the client side sever .
+Use npm start to start the client side sever . (In another Terminal)
 4. cd/client
    npm start
 ```
