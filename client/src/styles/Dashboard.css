@@ -1,0 +1,145 @@
+
+.AddFriend{
+    height: 100vh;
+    width: 380px;
+  
+   
+}
+
+.friendHeader{
+    opacity: 0.5;  
+}
+.friendHeader:hover{
+    opacity: 0.9;
+}
+.Friend_List{
+    opacity: 0.8;
+}
+.friendlist{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.friendlist i{
+    margin-right: 15px;
+}
+.AddFrnd{
+    background: none;
+    border: none;
+}
+.AddFrnd:focus{
+    outline: none;
+}
+/* ********************* */
+.Middle{
+    height: 100vh;
+    width: 602px;
+    border: lightgray 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex{
+    display: flex;
+}
+.content{
+    height: 22px;
+    width: 148px;
+   
+    margin-top: 50px;
+    margin-left: 45%;
+    background: #EEEEEE;
+
+    
+    font-size: 13px;
+}
+
+/* *********************Middle Dashboard********************** */
+.MidDash{
+    background: #EEEEEE;
+    height: 113px;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.DashHeader{
+    margin-top: 5%;
+    border-bottom: 1px lightgray solid;
+    padding: 5px;
+}
+.DashHeader h3{
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.DashHeader button{
+    margin-top: 12px;
+    margin-right: 5px;
+    color: white;
+}
+.DashHeader button:hover{
+    color: white;
+}
+.settle{
+    background: #5BC5A7;
+}
+.expense{
+    background: #FF652F;
+}
+.total{
+    display: flex;
+    color: #9999A4;
+    justify-content: center;
+    
+}
+.total div{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px lightgray solid;
+    font-size: 14px;
+}
+.total div label{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.green{
+ color: #5BC5A7;
+}
+.totalCollection{
+    display: flex;
+}
+.totalCollection div{
+ width: 50%;
+ color: #9999A9;
+ margin-left: 15px;
+ margin-top: 15px;
+ font-size: 14px;
+}
+li{
+    list-style-type: none;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    /* border-right: 1px solid gray */
+}
+.imgs{
+    width: 40px;
+    margin-right: 20px;
+
+}
+.inline{
+    display: inline-block;
+}
+.inline h5{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inline span{
+    color: #5BC5A7;
+}
+.borders{
+    width: 50%;
+    border-right:  1px solid lightgray;
+    height: auto;
+    margin-right: 25px;
+}

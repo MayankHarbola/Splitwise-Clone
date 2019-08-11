@@ -1,0 +1,33 @@
+.signup{
+  display: flex;
+ 
+  margin-top: 8%;  
+  align-items: center; 
+  justify-content: center;
+ 
+}
+
+.signup-logo{
+  margin-right: 100px;
+  height: 300px;
+}
+
+.signup-form h3{
+  font-size: 15px;
+  color: #99A4C1
+}
+.signup-form label{
+  font-size: 22px;
+}
+.signup-form input{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.signup-form .btn{
+  /* padding: 25px; */
+margin-top: 10px;
+  font-size: 20px;
+  background: #FF652F;
+  color: white;
+}
