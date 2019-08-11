@@ -6,6 +6,7 @@ AddUser(userObject,response){
     userModel.create(userObject,(err,doc)=>{
        if(err){
            console.log("Error is ",err);
+           response.json({Status: "F"});
        }else{
            response.json({Status: "S", record: doc});
        }
@@ -69,16 +70,29 @@ Find(username){
 
 AddExp(userObject,response){
    
- userModel.findOneAndUpdate({username: userObject.username,"expensis.name":userObject.user},{'$set' : {"expensis.$.data.desc": userObject.inp.description,"expensis.$.data.amount": expensis.$.data.amount + userObject.inp.description,"expensis.$.data.date": userObject.inp.date}},{"new": true},
+ userModel.findOneAndUpdate({username: userObject.username,"expensis.name":userObject.user},{'$set' : {"expensis.$.data.desc": userObject.inp.description,"expensis.$.data.date": userObject.inp.date},"$inc":{"expensis.$.data.ammount": userObject.inp.amount}},{"new": true},
  (err,doc)=>{
      if(err){
          console.log(err);
      }else{
          //send mail to check.email => that userObject.default user has added you as his friend;
-      
+        console.log(doc);
          response.json({Status: "S",msg: "Added succesfully",doc: doc});
      }
  })
+},
+
+settle(userObject,response){
+     userModel.findOneAndUpdate({username: userObject.username,"expensis.name":userObject.user},{"$inc":{"expensis.$.data.ammount": userObject.val}},{"new": true},
+    (err,doc)=>{
+        if(err){
+            console.log(err);
+        }else{
+            //send mail to check.email => that userObject.default user has added you as his friend;
+           console.log(doc);
+            response.json({Status: "S",msg: "Added succesfully",doc: doc});
+        }
+    })
 }
 
 }

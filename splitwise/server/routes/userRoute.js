@@ -66,4 +66,8 @@ app.post('/getData',(req,res)=>{
 app.post('/addExp',(req,res)=>{
     userOperation.AddExp(req.body,res);
 })
+app.post('/settle',(req,res)=>{
+    userOperation.settle(req.body,res);
+})
+
 module.exports =  app;
